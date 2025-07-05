@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan</title>
+  <style>
+
+    @font-face {
+        font-family: greatvibes;
+        src: url(fonts/GreatVibes-Regular.ttf);
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #EEAECA;
+      background: radial-gradient(circle, rgba(238, 174, 202, 0) 58%, rgba(255, 224, 181, 1) 100%);
+    }
+
+    .layout {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: url('images/pic2.jpg') center/cover no-repeat;
+      height: 60vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-family: 'GreatVibes', cursive;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      font-family: 'GreatVibes', cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #cc6b5a;
+    }
+
+    .mempelai {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pasangan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .name {
+        font-family: 'greatvibes';
+        font-size: 2em;
+        margin: 5px;
+    }
+
+    .mapsButton {
+        padding: 4%;
+        cursor: pointer;
+    }
+
+    .mapsButton:hover {
+        background-color: rgb(97, 96, 96);
+        transition: .4s ease-in-out;
+        transition-delay: .3s;
+    }
+
+    .locateIcon {
+        height: 20px;
+        width: 20px;
+        text-align: center;
+    }
+
+    footer {
+      background: #cc6b5a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <h1>Suami & Istri</h1>
+      <p>Rabu, 25 Juni 2025</p>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="section-title">Ucapan</h2>
+        <p>Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami.</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Mempelai</h2>
+        <img src="images/pic.jpg" class="mempelai" />
+        <div class="pasangan">
+            <span class="name">Suami</span>
+            <span class="name">&</span>
+            <span class="name">Istri</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Waktu & Tempat</h2>
+        <p>Resepsi: 25 Juni 2025, 19.00 WITA - Selesai<br/>Restaurant Marannu, Jl. Setia Budi No. 11, Palu</p>
+        <button class="mapsButton" onclick="maps()" ><img src="images/placeholder.png" class="locateIcon" /><br>Maps</button>
+      </section>
+
+      <section>
+        <h2 class="section-title">Doa & Kehadiran</h2>
+        <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Terima kasih atas doa dan kehadiran Anda.</p>
+    </footer>
+  </div>
+
+  <script>
+    function maps() {
+        location.href = "https://maps.app.goo.gl/SLCCvLkW8P18MRXaA";
+    }
+  </script>
+</body>
+</html>
